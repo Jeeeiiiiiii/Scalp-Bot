@@ -1,0 +1,44 @@
+{
+  "exchange": {
+    "name": "binance",
+    "api_key": "YOUR_API_KEY_HERE",
+    "api_secret": "YOUR_API_SECRET_HERE",
+    "testnet": false
+  },
+  "bot_settings": {
+    "symbol": "BTC/USDT",
+    "paper_trading": true,
+    "initial_balance": 10000
+  },
+  "strategy_parameters": {
+    "risk_per_trade": 0.02,
+    "reward_ratio": 2,
+    "range_timeframe": "15m",
+    "trading_timeframe": "5m"
+  },
+  "risk_management": {
+    "max_position_size_usd": 100,
+    "max_daily_loss_usd": 20,
+    "max_daily_trades": 3,
+    "enable_stop_loss": true,
+    "enable_take_profit": true
+  },
+  "time_settings": {
+    "timezone": "Asia/Manila",
+    "range_start_time": "09:30",
+    "range_end_time": "09:45",
+    "entry_cutoff_time": "12:00",
+    "market_open": "09:30",
+    "market_close": "16:00"
+  },
+  "logging": {
+    "log_file": "logs/trading_bot.log",
+    "enable_console_logging": true,
+    "log_level": "INFO"
+  },
+  "notifications": {
+    "enable_telegram": false,
+    "telegram_bot_token": "",
+    "telegram_chat_id": ""
+  }
+}
